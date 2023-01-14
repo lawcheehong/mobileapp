@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FYP_Management_MobileApp</string>
+
+    <string-array name="batch">
+        <!--        <item>May 2021</item>-->
+        <!--        <item>September 2021</item>-->
+        <!--        <item>February 2022</item>-->
+        <!--        <item>May 2022</item>-->
+        <item>September 2022</item>
+    </string-array>
+</resources>

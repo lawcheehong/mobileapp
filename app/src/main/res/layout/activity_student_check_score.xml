@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientwhiteblue"
+    tools:context=".studentCheckScore">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="220px">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="100px"
+                android:src="@drawable/newera"
+                android:layout_gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textAlignment="center"
+                android:text=" My Grades"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+            <TextView
+                android:id="@+id/notice_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@drawable/shape"
+                android:text="Title: 3 FYP Title with abstract\nMarks:"
+                android:lineHeight="32dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+            <TextView
+                android:id="@+id/notice_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@drawable/shape"
+                android:text="Title: FYP Proposal\nMarks:"
+                android:lineHeight="32dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/notice_tv1"/>
+
+            <TextView
+                android:id="@+id/notice_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@drawable/shape"
+                android:text="Title: Thesis/ disseration drafts\nMarks:"
+                android:lineHeight="32dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/notice_tv2"/>
+
+            <TextView
+                android:id="@+id/notice_tv4"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@drawable/shape"
+                android:text="Title: Proposal presentation slide\nMarks:"
+                android:lineHeight="32dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/notice_tv3"/>
+
+            <TextView
+                android:id="@+id/notice_tv5"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@drawable/shape"
+                android:text="Title: Final presentation slide\nMarks:"
+                android:lineHeight="32dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/notice_tv4"/>
+
+            <TextView
+                android:id="@+id/notice_tv6"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="@drawable/shape"
+                android:text="Title: FYP Poster\nMarks:"
+                android:lineHeight="32dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_margin="20dp"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/notice_tv5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigationstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:menu="@menu/studentmenu"
+        tools:ignore="MissingConstraints" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
