@@ -80,7 +80,7 @@ public class supervisorViewAndDownloadThesisDraft extends AppCompatActivity {
                     }
                 };
                 listView.setAdapter(adapter);
-                Toast.makeText(supervisorViewAndDownloadThesisDraft.this, "Got list", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(supervisorViewAndDownloadThesisDraft.this, "Got list", Toast.LENGTH_SHORT).show();
             }
 
             @Override

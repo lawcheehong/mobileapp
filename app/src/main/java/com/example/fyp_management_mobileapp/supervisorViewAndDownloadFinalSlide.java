@@ -80,7 +80,7 @@ public class supervisorViewAndDownloadFinalSlide extends AppCompatActivity {
                     }
                 };
                 listView.setAdapter(adapter);
-                Toast.makeText(supervisorViewAndDownloadFinalSlide.this, "Got list", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(supervisorViewAndDownloadFinalSlide.this, "Got list", Toast.LENGTH_SHORT).show();
             }
 
             @Override

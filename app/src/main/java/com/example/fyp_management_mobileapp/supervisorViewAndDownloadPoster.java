@@ -80,7 +80,7 @@ public class supervisorViewAndDownloadPoster extends AppCompatActivity {
                     }
                 };
                 listView.setAdapter(adapter);
-                Toast.makeText(supervisorViewAndDownloadPoster.this, "Got list", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(supervisorViewAndDownloadPoster.this, "Got list", Toast.LENGTH_SHORT).show();
             }
 
             @Override
